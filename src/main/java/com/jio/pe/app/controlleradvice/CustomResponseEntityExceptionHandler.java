@@ -1,0 +1,10 @@
+package com.jio.pe.app.controlleradvice;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+@ControllerAdvice
+public class CustomResponseEntityExceptionHandler extends ResponseEntityExceptionHandler {
+
+
+	
+}

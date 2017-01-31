@@ -1,0 +1,23 @@
+#DB Connection
+jdbc.driverClassName=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost:3306/jioappdb
+jdbc.username=root
+jdbc.password=mysql
+#Connection pooling
+min.pool.size=2
+max.pool.size=5
+timeout=600
+max.statements=0
+idle.test.period=300
+acquire.increment=1
+#Hibernate
+hibernate.dialect=org.hibernate.dialect.MySQLDialect
+hibernate.show_sql=true
+hibernate.hbm2ddl.auto=update
+#Caching
+hibernate.cache.provider_class=org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
+hibernate.cache.use_second_level_cache=true
+net.sf.ehcache.configurationResourceName=config/ehcache/ehcache.xml
+hibernate.properties.location=properties/hibernate.properties
+datbase.properties.location=properties/database.properties
+hibernate.entity.package.scan=com.jio.pe.app.model
